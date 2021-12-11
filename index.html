@@ -9,18 +9,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Hotel</title>
 </head>
 <body>
     <!--Menu-->
     <header class="header__container">
-        <div class="header__logo">
+        <div class="header__logo scale-up-center">
             <a href="index.html">
                 <img class="logo" src="images/logo.jpg" alt="logo">
             </a>    
         </div>
             
-        <nav class="header__nav text--transform">
+        <nav class="header__nav text--transform tracking-in-expand">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="pages/nosotros.html">Nosotros</a></li>                
@@ -33,11 +34,11 @@
     <!--Fin-Menu-->
 
     <!--Portada-->
-    <section class="portada">  
+    <section class="portada color-change-2x">  
         <article class="portada__articulo">
-            <img class="portada__imagen" src="images/Portada.jpg" alt="atardecer">
+            <img class="portada__imagen" src="images/Portada.jpg" data-aos="zoom-out" alt="atardecer">
             <div class="portada__containerTexto">
-                <h1 class="titulos text--transform">El mejor hotel</h1>
+                <h1 class="titulos text--transform tracking-in-expand">El mejor hotel</h1>
                 <p class="portada__parrafo">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate soluta enim culpa necessitatibus. Eum a nam hic distinctio at nostrum totam ex labore quasi quisquam sit deleniti, magni laudantium autem?
                     Earum sapiente distinctio, soluta quis in corrupti ullam consectetur libero consequatur. Consequatur laboriosam tenetur est repudiandae rem, maiores quas saepe blanditiis fugiat voluptates ipsa ratione eaque tempora molestiae obcaecati repellendus.
@@ -50,10 +51,10 @@
     <!--Fin-Portada-->
     <!--habitaciones-->
     <section class="habitaciones">      
-        <h1 class="instalaciones_titulos titulos text--transform">Habitaciones</h1>   
+        <h1 class="instalaciones_titulos titulos text--transform tracking-in-expand">Habitaciones</h1>   
         <article class="instalaciones__articulos">                       
             <div class="instalaciones__contenido">
-                <img class="instalaciones__img" src="images/hab1.jpg" alt="Restaurante">
+                <img class="instalaciones__img" data-aos="fade-right" src="images/hab1.jpg" alt="Restaurante">
                 <div class="instalaciones_texto">
                     <h2 class="text--transform">Las mas comodas</h2>
                     <p>
@@ -72,16 +73,16 @@
                         Ea sit itaque quae cumque, nesciunt similique dignissimos molestias ratione! Et exercitationem tenetur aperiam eum rerum fugit laborum laboriosam. Reiciendis laudantium atque placeat vero, doloribus sed mollitia obcaecati animi praesentium.
                     </p>
                 </div>
-                <img class="instalaciones__img" src="images/hab2.jpg" alt="Piscina">   
+                <img class="instalaciones__img" data-aos="fade-left" src="images/hab2.jpg" alt="Piscina">   
             </div>            
         </article>
     <!--Fin-Habitaciones-->
     <!--Instalaciones-->
     <section class="instalaciones">      
-        <h1 class="instalaciones_titulos titulos text--transform">Instalaciones</h1>   
+        <h1 class="instalaciones_titulos titulos text--transform tracking-in-expand">Instalaciones</h1>   
         <article class="instalaciones__articulos">                       
             <div class="instalaciones__contenido">
-                <img class="instalaciones__img" src="images/restaurante.jpg" alt="Restaurante">
+                <img class="instalaciones__img" data-aos="fade-down-right" src="images/restaurante.jpg" alt="Restaurante">
                 <div class="instalaciones_texto">
                     <h2 class="text--transform">Restaurante</h2>
                     <p>
@@ -100,12 +101,12 @@
                         Ea sit itaque quae cumque, nesciunt similique dignissimos molestias ratione! Et exercitationem tenetur aperiam eum rerum fugit laborum laboriosam. Reiciendis laudantium atque placeat vero, doloribus sed mollitia obcaecati animi praesentium.
                     </p>
                 </div>
-                <img class="instalaciones__img" src="images/piscina.jpg" alt="Piscina">   
+                <img class="instalaciones__img" src="images/piscina.jpg" data-aos="fade-down-left" alt="Piscina">   
             </div>            
         </article>
         <article class="instalaciones__articulos">                       
             <div class="instalaciones__contenido">
-                <img class="instalaciones__img" src="images/actividades.jpg" alt="Restaurante">
+                <img class="instalaciones__img" src="images/actividades.jpg" data-aos="fade-down-right" alt="Restaurante">
                 <div class="instalaciones_texto">
                     <h2 class="text--transform">Actividades</h2>
                     <p>
@@ -121,7 +122,7 @@
     <!--Fotos-Reviews-->
     <section class="reviews">
         <article>
-            <img class="reviews_img" src="images/foto1.jpg" alt="foto">
+            <img class="reviews_img" src="images/foto1.jpg" data-aos="zoom-in" alt="foto">
             <div class="review_texto">
                 <h2 >Jose review:</h2>
                 <p>
@@ -130,7 +131,7 @@
             </div>             
         </article>
         <article class="reverse-row">
-            <img class="reviews_img" src="images/foto2.jpg" alt="foto">
+            <img class="reviews_img" src="images/foto2.jpg" data-aos="zoom-in" alt="foto">
             <div class="review_texto">
                 <h2 >Maria review:</h2>
                 <p>
@@ -139,7 +140,7 @@
             </div>  
         </article>
         <article>
-            <img class="reviews_img" src="images/foto3.jpg" alt="foto">
+            <img class="reviews_img" src="images/foto3.jpg" data-aos="zoom-in" alt="foto">
             <div class="review_texto">
                 <h2>Laura review:</h2>
                 <p>
@@ -151,7 +152,7 @@
     <!--Fin-Fotos-Reviews-->
     <!--Precios-->
     <section class="precios">
-        <h1 class="titulos">Precios por Habitacion</h1>
+        <h1 class="titulos tracking-in-expand">Precios por Habitacion</h1>
         <table>
             <tr class="text--transform precios_tablaTitulos">
                 <th>Noches</th>
@@ -264,6 +265,9 @@
     </footer>
     <!--Fin-Footer-->
 
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

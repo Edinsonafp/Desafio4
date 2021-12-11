@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Hotel</title>
 </head>
 <body>
@@ -16,9 +17,9 @@
     <header class="header__container">
 
         <a href="index.html">
-            <img class="header__logo" src="../images/logo.jpg" alt="atardecer" width="100px" height="100px">
+            <img class="header__logo scale-up-center" src="../images/logo.jpg" alt="atardecer" width="100px" height="100px">
         </a>        
-        <nav class="header__nav text--transform">
+        <nav class="header__nav text--transform tracking-in-expand">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>                
@@ -31,12 +32,12 @@
     <!--Fin-Menu-->
     <!--Promociones-->
     <section class="instalaciones">      
-        <h1 class="titulos text--transform">promociones</h1>   
+        <h1 class="titulos text--transform tracking-in-expand">promociones</h1>   
         <article class="instalaciones__articulos">                       
             <div class="instalaciones__contenido">
-                <img class="instalaciones__img" src="../images/restaurante.jpg" alt="Restaurante">
+                <img class="instalaciones__img" src="../images/restaurante.jpg" data-aos="fade-up" data-aos-duration="3000" alt="Restaurante">
                 <div class="instalaciones_texto">
-                    <h2 class="text--transform">5 noches por el precio de 4 <a class="promo__boton" href="reservar.html">Reservar</a></h2>
+                    <h2 class="text--transform tracking-in-expand">5 noches por el precio de 4 <a class="promo__boton" href="reservar.html">Reservar</a></h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur mollitia, quasi est deleniti modi ipsum fuga excepturi eveniet in, dolore minima atque? Atque illo rem animi deserunt pariatur aliquam non!
                         Ea sit itaque quae cumque, nesciunt similique dignissimos molestias ratione! Et exercitationem tenetur aperiam eum rerum fugit laborum laboriosam. Reiciendis laudantium atque placeat vero, doloribus sed mollitia obcaecati animi praesentium.
@@ -47,20 +48,20 @@
         <article class="instalaciones__articulos ">          
             <div class="instalaciones__contenido reverse-items">                
                 <div class="instalaciones_texto">
-                    <h2 class="text--transform">Festivos de 2X1 <a class="promo__boton" href="reservar.html">Reservar</a></h2>
+                    <h2 class="text--transform tracking-in-expand">Festivos de 2X1 <a class="promo__boton" href="reservar.html">Reservar</a></h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur mollitia, quasi est deleniti modi ipsum fuga excepturi eveniet in, dolore minima atque? Atque illo rem animi deserunt pariatur aliquam non!
                         Ea sit itaque quae cumque, nesciunt similique dignissimos molestias ratione! Et exercitationem tenetur aperiam eum rerum fugit laborum laboriosam. Reiciendis laudantium atque placeat vero, doloribus sed mollitia obcaecati animi praesentium.
                     </p>
                 </div>
-                <img class="instalaciones__img" src="../images/piscina.jpg" alt="Piscina">   
+                <img class="instalaciones__img" src="../images/piscina.jpg" data-aos="fade-up" data-aos-duration="3000" alt="Piscina">   
             </div>            
         </article>
         <article class="instalaciones__articulos">                       
             <div class="instalaciones__contenido">
-                <img class="instalaciones__img" src="../images/actividades.jpg" alt="Restaurante">
+                <img class="instalaciones__img" src="../images/actividades.jpg" data-aos="fade-up" data-aos-duration="3000" alt="Restaurante">
                 <div class="instalaciones_texto">
-                    <h2 class="text--transform">Actividades Gratis por la compra de un paquete <a class="promo__boton" href="reservar.html">Reservar</a></h2>
+                    <h2 class="text--transform tracking-in-expand">Actividades Gratis por la compra de un paquete <a class="promo__boton" href="reservar.html">Reservar</a></h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur mollitia, quasi est deleniti modi ipsum fuga excepturi eveniet in, dolore minima atque? Atque illo rem animi deserunt pariatur aliquam non!
                         Ea sit itaque quae cumque, nesciunt similique dignissimos molestias ratione! Et exercitationem tenetur aperiam eum rerum fugit laborum laboriosam. Reiciendis laudantium atque placeat vero, doloribus sed mollitia obcaecati animi praesentium.
@@ -101,6 +102,9 @@
 
     </footer>
     <!--Fin-Footer-->
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
