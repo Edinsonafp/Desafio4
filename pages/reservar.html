@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap" rel="stylesheet">
+    <title>Hotel</title>
+</head>
+<body>
+    <!--Menu-->
+    <header class="header__container">
+
+        <a href="index.html">
+            <img class="header__logo" src="../images/logo.jpg" alt="atardecer" width="100px" height="100px">
+        </a>        
+        <nav class="header__nav text--transform">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>                
+                <li><a href="reservar.html">Reservar</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+                <li><a href="contactanos.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Fin-Menu-->
+    <!--Precios-->
+    <section class="precios">
+        <h1 class="titulos text--transform">nuestros precios</h1>
+        <table>
+            <tr class="text--transform precios_tablaTitulos">
+                <th>Noches</th>
+                <th>Individual</th>
+                <th>Compartida</th>
+                <th>Familiar</th>
+            </tr>
+            <tr class="precios_tablaDatos">
+                <td>1</td>
+                <td>100</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+            <tr class="precios_tablaDatos">
+                <td>2</td>
+                <td>200</td>
+                <td>400</td>
+                <td>600</td>
+            </tr>
+            <tr class="precios_tablaDatos">
+                <td>3</td>
+                <td>300</td>
+                <td>600</td>
+                <td>900</td>
+            </tr>
+            <tr class="precios_tablaDatos">
+                <td>4</td>
+                <td>400</td>
+                <td>800</td>
+                <td>1200</td>
+            </tr>
+        </table>
+    </section>
+    <!--Fin-Precios-->
+    <!--Contenido-->
+    <section class="contactanos">
+        <div class="contactanos_wrap">
+            <div class="contactanos_formulario">
+                <form action="#" method="GET" enctype="text/plain" >
+                    <fieldset>
+                        <legend class="titulos">Reservar</legend>
+                        <label class="contactanos_titulos" for="tipo-habitacion">Habitacion:</label>
+                        <div class="contactanos_inputRadios">
+                            <input type="radio" name="tipo-habitacion" value="individual">Individual
+                            <input type="radio" name="tipo-habitacion" value="compartida">Compartida
+                            <input type="radio" name="tipo-habitacion" value="compartida">Familiar
+                        </div>
+                        <div class="contactanos_agruparInputs">
+                            <label class="contactanos_titulos" for="info-personal">Nombre</label>
+                            <input type="text" name="user-info" id="info-personal" placeholder="Ingrese su nombre">
+                            <label class="contactanos_titulos" for="info-personal">Apellido</label>
+                            <input type="text" name="user-info" id="info-personal" placeholder="Ingrese su apellido">
+                        </div>
+                        <div class="contactanos_agruparInputs">
+                            <label class="contactanos_titulos" for="info-personal">Correo</label>
+                            <input type="email" name="user-info" id="info-personal" placeholder="Ingrese tu email">
+                        </div>    
+                        <div class="contactanos_agruparInputs">
+                            <label class="contactanos_titulos" for="cantidad-personas">Numero de personas:</label>
+                            <select name="cantidad-personas" id="num-personas">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="mas-de-5">Mas de 5</option>
+                            </select>
+                        </div>  
+                        <div class="contactanos_agruparInputs">
+                            <label class="contactanos_titulos" for="desde">Desde:</label>
+                            <input type="date" name="desde">
+                            <label class="contactanos_titulos" for="hasta">Hasta:</label>
+                            <input type="date" name="hasta">
+                        </div> 
+                        <label class="contactanos_titulos" for="pago">Metodo de pago:</label>
+                        <div class="contactanos_inputRadios">                            
+                            <input type="radio" name="pago" value="individual">Credito
+                            <input type="radio" name="pago" value="compartida">Debito
+                            <input type="radio" name="pago" value="compartida">Efectivo
+                        </div>
+                        <label class="contactanos_titulos" for="condiciones">Aceptar terminos y condiciones:</label>
+                        <div class="contactanos_inputRadios">
+                            <input type="checkbox" name="condiciones">Acepto
+                        </div>      
+                        
+                        <div class="contactanos_buttons">
+                            <input class="contactanos__enviar" type="submit" value="Enviar">
+                            
+                        </div>  
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--Fin-Contactanos-->
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer_menu">
+            <h3 class="text--transform">Logo</h3>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>                
+                <li><a href="reservar.html">Reservar</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+                <li><a href="contactanos.html">Contactanos</a></li>
+            </ul>
+        </div>
+        <div class="footer_redes">
+            <h3 class="text--transform">Redes sociales</h3>
+            <ul>
+                <li><a href="https://www.instagram.com/?hl=esl" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>                
+                <li><a href="https://twitter.com/?lang=es" target="_blank">Twitter</a></li>
+                <li><a href="https://www.whatsapp.com/?lang=es" target="_blank">WhatsApp</a></li>
+            </ul>           
+        </div>
+        <div class="footer_reserva">
+            <h3 class="text--transform">Reserva</h3>
+            <ul>
+                Tel: 123-123-4567
+            </ul>           
+        </div>
+
+    </footer>
+    <!--Fin-Footer-->
+</body>
+</html>

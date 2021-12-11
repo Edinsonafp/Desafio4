@@ -1,0 +1,753 @@
+/* RESET STYLE*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* MENU */
+.header__container{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    grid-template-areas: "logo nav";
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo{
+    grid-area: logo;
+    height: 100px;
+    width: 100px;
+    margin-left: 100px;
+}
+
+.header__nav{
+    display: flex;
+    grid-area: nav;
+    margin: 30px;
+    float: right;
+    text-align: center;
+}
+
+.header__container ul{
+    list-style: none;
+}
+
+.header__container ul li{
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+    font-size: 1rem;
+    font-weight: bold;  
+      
+}
+
+.header__container ul li a{
+    text-decoration: none;
+    color: #0CB088;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+}
+
+/* FIN MENU */
+/* Portada */
+
+.portada{
+    display: block;  
+    align-items: center;
+    background-color: #d8f6ea;
+}
+
+.portada__imagen{
+    padding: 10px;
+    width: 100%;
+    
+}
+
+.portada__containerTexto{ 
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.titulos{
+    text-align: center;
+    font-weight: bold;  
+    font-size: 2rem;
+    padding: 20px;
+
+}
+
+.portada__parrafo{
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    width: 60%;
+}
+
+.portada__video{
+    padding: 10px;
+    width: 100%;
+    height: 500px;
+}
+/* FIN PORTADA */
+/* Habitaciones */
+.habitaciones{
+    background-image: url("../images/marco-palmas.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    
+    height: 900px;
+}
+
+.habitaciones article{
+    padding: 20px;
+}
+
+.habitaciones__posicion{
+    
+    margin: auto;
+    position: relative;
+    width: 90%;
+    height: 600px;
+}
+
+.habitaciones__img1{
+    width: 40%;
+    height: 60%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+
+}
+
+.habitaciones__img2{
+    width: 45%;
+    height: 60%;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+
+}
+
+.habitaciones__texto{
+    width: 450px;
+    height: 400px;
+    position: absolute;
+    top: 15%;
+    left: 55%;
+
+}
+
+.habitaciones__texto2{
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    top: 80%;
+    left: 15%;
+
+}
+
+.habitaciones__titulo{
+    text-align: left;
+    font-weight: bold;  
+    margin-bottom: 10px;
+}
+/* Fin Habitaciones */
+
+/* Instalaciones */
+.instalaciones{
+    background-color: #d8f6ea;
+  
+}
+
+.instalaciones__contenido{
+    display: flex;
+    justify-content: center;    
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+    
+}
+
+.instalaciones h1{
+    padding: 30px;
+    
+}
+
+.instalaciones h2{
+    text-align: center;
+}
+
+.instalaciones_texto{
+    margin: auto;
+    padding: 10px;
+    width: 40%;
+    text-align: center;
+}
+
+.instalaciones__img{
+    width: 50%;
+    height: 400px;
+}
+
+/* Fin Instalaciones */
+/* Fotos-Review */
+.reviews{    
+    margin: 10px;    
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "articulo articulo articulo";
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;  
+}
+
+.reviews_img{
+    width: 100%;
+    height: 100%;
+}
+.review_texto{
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+    text-align: center;
+}
+
+/* Fin Fotos-Review */
+/* Precios */
+.precios{
+    padding: 50px;
+    background-color: #d8f6ea;
+    align-items: center;
+    height: 500px;
+
+}
+
+.precios table{
+    width: 90%;
+    margin: auto;
+    height: 80%;
+}
+
+.precios_tablaTitulos{
+    background-color: #0CB088;
+    color: #fff;
+}
+
+.precios_tablaDatos{
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    background-color:lightgray;
+}
+/* Fin Precios */
+/* Contactanos */
+.contactanos{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    grid-template-areas: "mapa formulario";
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;  
+    padding: 10px;
+}
+
+
+.contactanos_formulario{
+    grid-template-areas: formulario;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+
+.contactanos_titulos{
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+.contactanos_inputRadios{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+}
+
+.contactanos_agruparInputs{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+}
+
+.contactanos_buttons{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    
+}
+
+.contactanos__enviar{
+    background-color:#4BB543;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+}
+
+
+.contactanos__reiniciar{
+    background-color: yellow;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.mapa{
+    grid-template-areas: mapa;
+    width:500px; 
+    height:450px;
+    border:0;
+}
+/* Fin Contactanos */
+/*Nosotros*/
+.nosotros__mapa{
+    padding: 10px;
+}
+
+.nosotros__mapa iframe{
+    width: 100%;
+    height: 500px;
+}
+/*Fin Nosotros*/
+/*Nosotros*/
+.promo__boton{
+    background-color: #f44336;
+    color: white;
+    margin: 10px;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+/*Fin Nosotros*/
+
+.contactanos_otro{
+    padding: 50px;
+    background-color: #d8f6ea;  
+    
+}
+
+/* Fin Contactanos */
+/* FOOTER */
+.footer{
+    background-color: #0CB088;
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+/* FIN-FOOTER */
+
+/* Transform */
+
+.text--transform{
+    text-transform: uppercase;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 800px) {
+    /* MENU */
+    .header__container{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        grid-template-areas: "logo""nav";
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .header__logo{
+        grid-area: logo;        
+        margin-left: 0px;
+    }
+
+    .header__nav{
+        display: flex;
+        grid-area: nav;
+        float: right;
+        text-align: center;
+    }   
+
+    /* FIN MENU */
+
+        /* Fotos-Review */
+.reviews{     
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas: "img"
+                         "articulo"
+                         "img";
+    align-items: center;
+    justify-content: space-around;
+}
+
+.reviews article{
+    display: flex;    
+}
+
+.reviews_img{
+    grid-template-areas: img;
+    margin: 5px;
+    width: 50%;
+    display: inline-block;   
+}
+
+.review_texto{
+    display: inline-block; 
+}
+
+.reverse-row{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* Contactanos */
+.contactanos{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    grid-template-areas: "mapa" "formulario";
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;  
+    padding: 10px;
+}
+
+
+.contactanos_formulario{
+    display: inline-block;
+    grid-template-areas: formulario;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+
+.mapa{
+    display: inline-block;
+    grid-template-areas: mapa;
+    width:500px; 
+    height:450px;
+    border:0;
+}
+/* Fin Contactanos */
+
+
+    
+}
+
+@media screen and (max-width: 768px) {
+    /* MENU */
+    .header__container{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        grid-template-areas: "logo""nav";
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .header__logo{
+        grid-area: logo;        
+        margin-left: 0px;
+    }
+
+    .header__nav{
+        display: flex;
+        grid-area: nav;
+        float: right;
+        text-align: center;
+    }   
+
+    /* FIN MENU */
+    /* Fotos-Review */
+.reviews{     
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas: "articulo"
+                         "articulo"
+                         "articulo";
+    align-items: center;
+    justify-content: space-around;
+}
+
+.reviews article{
+    grid-template-areas: article;
+    display: flex;    
+}
+
+.reviews_img{
+    margin: 5px;
+    width: 50%;
+    display: inline-block;   
+}
+
+.review_texto{
+    display: inline-block; 
+}
+
+.reverse_row{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+/* Fin Fotos-Review */
+
+.instalaciones__contenido{
+    width: 100%;
+}
+    
+}
+
+@media screen and (max-width: 560px) {
+    .header__container{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        grid-template-areas: "logo""nav";
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .header__logo{
+        grid-area: logo;        
+        margin-left: 0px;
+    }
+
+    .header__nav{
+        grid-area: nav;
+        float: right;
+        text-align: center;
+    }
+    .header__nav ul li{
+        display: block;
+    }      
+
+.portada__parrafo{
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+}
+/* Instalaciones */
+.instalaciones{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas: "titulo"
+                         "articulo"
+                         "articulo"
+                         "articulo";
+    align-items: center;
+    justify-content: center;
+    justify-items: center;  
+  
+}
+
+.instalaciones_titulos{
+    grid-area: titulo;
+    text-align: center;
+
+}
+
+.instalaciones__contenido{
+    width: 100%;
+    display: block;
+    flex-direction: column;
+    justify-content: center;       
+    
+}
+
+.reverse-items{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+.instalaciones h1{
+    padding: 30px;
+    
+}
+
+.instalaciones h2{
+    text-align: center;
+}
+
+.instalaciones_texto{
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.instalaciones__img{
+    width: 100%;
+    height: 400px;
+}
+
+/* Fin Instalaciones */
+/* Fotos-Review */
+.reviews{     
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas: "articulo"
+                         "articulo"
+                         "articulo";
+    align-items: center;
+    justify-content: center;
+    justify-items: center;  
+}
+
+.reviews article{
+    grid-template-areas: articulo;
+    display: inline-block;
+    align-items: center;
+}
+
+.reviews_img{
+    margin: 5px;
+    width: 100%;
+    display: inline-block;   
+}
+
+
+/* Fin Fotos-Review */
+
+/* Precios */
+.precios{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.precios table{
+    table-layout: fixed;
+    width: 100%;
+    height: 80%;
+}
+
+.precios_tablaTitulos{
+    font-size: 0.5rem;
+}
+
+/* Fin Precios */
+
+/* Contactanos */
+.contactanos{    
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    grid-template-areas: "mapa""formulario";
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.contactanos_formulario{
+    grid-area: formulario; 
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.mapa{
+    width:300px; 
+    height:450px;
+}
+/* Fin Contactanos */
+
+/* FOOTER */
+.footer{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas: "links"
+                         "redes"
+                         "reserva";
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.footer_menu{
+    grid-area: links;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.footer_redes{
+    grid-area: redes;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.footer_reserva{
+    grid-area: reserva;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+/* FIN-FOOTER */
+
+}
